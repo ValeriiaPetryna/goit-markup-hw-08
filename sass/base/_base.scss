@@ -1,0 +1,55 @@
+body {
+    font-family: $main-font;
+    text-decoration-color: #757575;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1, 17;
+    color: $main-color;
+}
+
+.team__title,
+.customers__title {
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
