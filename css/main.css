@@ -18,14 +18,6 @@ ul {
   margin: 0;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 img {
   display: block;
   width: 100%;
@@ -57,6 +49,31 @@ img {
 .customers__title {
   margin-bottom: 50px;
   padding-top: 94px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button {
@@ -899,7 +916,30 @@ textarea {
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 94px;
+  }
+}
+
+.team__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .team__social-item {
@@ -967,13 +1007,13 @@ textarea {
 }
 
 .team__container {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .team__container {
+    padding-bottom: 94px;
+  }
 }
 
 .team__social-icon {
@@ -987,6 +1027,28 @@ textarea {
   color: #212121;
 }
 
+@media screen and (min-width: 765px) {
+  .team__member:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__member {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__member {
+    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 4);
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+}
+
 .team__position {
   font-weight: 400;
   font-size: 16px;
@@ -998,10 +1060,6 @@ textarea {
 .team__position-marketing {
   background: url(16166.jpg);
   border-radius: 0px;
-}
-
-.team__member:not(:first-child) {
-  margin-left: 30px;
 }
 
 .team__member,
