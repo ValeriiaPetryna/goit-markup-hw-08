@@ -18,7 +18,14 @@
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: -15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .team__member:not(:last-child) {
+        margin-bottom: 15px;
     }
 }
 
