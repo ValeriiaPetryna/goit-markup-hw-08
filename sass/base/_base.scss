@@ -3,6 +3,15 @@ body {
     text-decoration-color: #757575;
 }
 
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+       
+        
 h1,
 h2,
 h3,
@@ -30,18 +39,36 @@ img {
 }
 
 .title {
-    width: 700px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1, 17;
     color: $main-color;
+
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
 }
 
 .team__title {
-    margin-bottom: 50px;
-    padding-top: 94px;
+    margin-bottom: 30px;
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        padding-top: 94px;
+}
+
+}
+
+.customers__title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        padding-top: 94px;
+    }
+
 }
