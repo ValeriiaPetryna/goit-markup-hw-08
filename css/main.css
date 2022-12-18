@@ -3,13 +3,13 @@
   display: none;
 }
 
-.benefits, .team, .customers {
+.hero, .benefits, .team, .customers {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits, .team, .customers {
+  .hero, .benefits, .team, .customers {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -82,7 +82,6 @@ img {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
-    padding-top: 94px;
   }
 }
 
@@ -93,7 +92,6 @@ img {
 @media screen and (min-width: 1200px) {
   .customers__title {
     margin-bottom: 50px;
-    padding-top: 94px;
   }
 }
 
@@ -1031,10 +1029,8 @@ textarea {
 }
 
 .hero {
-  max-width: 1600px;
-  max-height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.4);
@@ -1044,6 +1040,29 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 768px;
+    max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -1400,6 +1419,10 @@ textarea {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 480px) {
