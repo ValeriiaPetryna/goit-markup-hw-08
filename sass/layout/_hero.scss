@@ -9,7 +9,18 @@ padding-top: 118px;
         margin-right: auto;
         background-color: rgba(47, 48, 58, 0.4);
     
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)), 
+        url(../images/hero/img_sm@1x.jpg);
+        @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),url(../images/hero/img_sm@2x.jpg); 
+            }
+
+
         background-position: center;
         background-repeat: no-repeat;
     
@@ -21,6 +32,8 @@ padding-top: 118px;
         @media screen and (min-width: 480px) {
             max-width: 768px;
             max-height: 400px;
+
+
             
         }
     
@@ -29,6 +42,17 @@ padding-top: 118px;
         @media screen and (min-width: 768px) {
             max-width: 768px;
             max-height: 400px;
+
+            background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/img_md@1x.jpg);
+            
+                @media screen and (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)), url(../images/hero/img_md@2x.jpg);
+                }
         }
     
         
@@ -37,6 +61,17 @@ padding-top: 118px;
         max-height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
+
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/hero/img_bg@1x.jpg);
+        
+            @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/hero/img_bg@2x.jpg);
+            }
         }
     }
     
