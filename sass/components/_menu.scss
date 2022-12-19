@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+   
 }
 
 @media (min-width: 767px) {
@@ -51,11 +53,8 @@
         right: 16px;
     }
 
-    @media (min-width: 768px) {
-
-        .menu-toggle {
-            display: none;
-        }
+    @media (min-width: 767px) {
+    display: none;
     }
 }
 
@@ -81,6 +80,10 @@
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    @media (min-width: 767px) {
+            display: none;
+        }
 }
 
 .menu-container.is-open {
