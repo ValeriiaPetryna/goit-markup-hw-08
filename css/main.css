@@ -633,9 +633,17 @@ textarea {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1, 19;
+  font-size: 24px;
+  line-height: calc(28/24);
+  letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__logo-firs, .footer__logo-firs {
+    font-size: 26px;
+    line-height: 1,19;
+  }
 }
 
 .nav__logo-second {
@@ -872,14 +880,6 @@ textarea {
   padding-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,12 +890,7 @@ textarea {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 
 .nav__list {
@@ -903,6 +898,10 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   margin: 0px;
+}
+
+.header__contacts {
+  display: none;
 }
 
 .nav__item:not(:first-child) {
