@@ -1,74 +1,101 @@
-body {
-    font-family: $main-font;
-    text-decoration-color: #757575;
-}
-
-ul {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-       
-        
-h1,
-h2,
-h3,
-p,
-ul {
-    padding: 0;
+* {
     margin: 0;
 }
 
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.list {
+ul {
     list-style: none;
-    padding-left: 0;
-    margin: 0;
+    padding: 0px;
 }
 
-.link {
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.icons {
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.container {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+
+    // padding-top: 94px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    }
+}
+
+.section__heading {
+    @media screen and (max-width: 1199px) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: calc(33/28);
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    }
+}
+
+a {
+    color: $main-color;
     text-decoration: none;
 }
 
-.title {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1, 17;
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $main-color;
-
-
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-    }
+    margin: 8px;
 }
 
-.team__title {
-    margin-bottom: 30px;
-        @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-        
+p {
+    color: $second-color;
+    padding: 10px;
 }
 
+a:hover,
+a:focus {
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    color: $accent-color;
 }
 
-.customers__title {
-    margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-        
-    }
-
+.portfolio {
+    padding-bottom: 94px;
 }

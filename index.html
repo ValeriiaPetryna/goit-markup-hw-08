@@ -24,14 +24,12 @@
      <body class="page-body">
     <header class="header" id="header">
       <div class="container header__container">
-        <a class="nav__logo link" href="./index.html"
-            ><span class="nav__logo-firs">Web</span
-            ><span class="nav__logo-second">Studio</span></a>
+        <div class="nav-container">
+  <a href="./index.html" class="header-logo"><span class="logo">Web</span>Studio</a>
         <nav class="nav">
-          
           <ul class="nav__list list">
             <li class="nav__item nav__border">
-              <a class="nav__link header__link act-stud link" href="./index.html"
+              <a class="nav__link header__link current" href="./index.html"
                 >Студія</a
               >
             </li>
@@ -42,13 +40,12 @@
                 >Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link header__link act-contacts link" href="a">Контакти</a>
+              <a class="nav__link header__link " href="a">Контакти</a>
             </li>
           </ul>
-  
         </nav>
-        <div class="header__contacts">
-          <ul class="header__list list">
+        </div>
+          <ul class="header__contacts list">
             <li class="item header__adress-item">
               <a class="contacts-link header__mail-link link"
                 href="mailto:info@devstudio.com">
@@ -198,7 +195,7 @@
       <!-- Чим ми займаємось -->
       <section class="about" id="about">
         <div class="container about__container">
-          <h2 class="about__title title">Чим ми займаємося</h2>
+          <h2 class="about__title title section__heading">Чим ми займаємося</h2>
           <ul class="about__list list">
             <li class="about__item">
               <img class="about__computer-version"
@@ -250,7 +247,7 @@
       <!-- Our team -->
       <section class="team" id="team">
         <div class="container team__container">
-          <h2 class="team__title title">Наша команда</h2>
+          <h2 class="team__title title section__heading ">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__member">
               <div class="team__card-thumb">
@@ -466,7 +463,7 @@
     <!-- REGULAR-CUSTOMERS -->
       <section class="customers" id="customers">
         <div class="container cusomers__container">
-          <h2 class="customers__title title">Постійні клієнти</h2>
+          <h2 class="customers__title title section__heading">Постійні клієнти</h2>
           <ul class="customers__icons-list list">
              <li class="customers__item">
               <a href="" class="customers__link link">
@@ -513,11 +510,8 @@
       <footer class="footer" id="footer">
         <div class="container footer__container">
         <div class="address-container">
-          <a class="footer__logo logo link" href="WebStudio"
-            ><span class="footer__logo-firs">Web</span
-            ><span class="footer__logo-second">Studio</span></a
-          >
-          <address>
+        <a href="./index.html" class="footer-logo"><span class="logo">Web</span>Studio</a>
+          <address class="address">
               <ul class="footer__contacts-list list">
                 <li>
                   <a
@@ -528,12 +522,12 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li>
+                <li class="address-list-item">
                   <a class="footer__contacts-link link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li>
+                <li class="address-list-item">
                   <a class=" footer__contacts-link link" href="tel:+380961111111"
                     >+38 096 111 11 11</a>
                 </li>
