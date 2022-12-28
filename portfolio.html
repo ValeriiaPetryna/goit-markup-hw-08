@@ -15,33 +15,30 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body class="page-body">
-     <header class="header" id="header">
+      <header class="header" id="header">
       <div class="container header__container">
+        <div class="nav-container">
+  <a href="./index.html" class="header-logo"><span class="logo">Web</span>Studio</a>
         <nav class="nav">
-          <a class="nav__logo link" href="./index.html"
-            ><span class="nav__logo-firs">Web</span
-            ><span class="nav__logo-second">Studio</span></a
-          >
           <ul class="nav__list list">
-            <li class="nav__item ">
-              <a class="nav__link header__link  link" href="./index.html"
+            <li class="nav__item nav__border">
+              <a class="nav__link header__link " href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="nav__item nav__border">
+            <li class="nav__item">
               <a
-                class="nav__link header__link act-port link"
+                class="nav__link header__link current link"
                 href="./portfolio.html"
-                >Портфоліо</a
-              >
+                >Портфоліо</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link header__link current link" href="a">Контакти</a>
+              <a class="nav__link header__link " href="a">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div class="header__contacts">
-          <ul class="header__list list">
+        </div>
+          <ul class="header__contacts list">
             <li class="item header__adress-item">
               <a class="contacts-link header__mail-link link"
                 href="mailto:info@devstudio.com">
@@ -60,6 +57,67 @@
                       </svg>
                       +38 096 111 11 11
                 </a>
+            </li>
+          </ul>
+          
+        </div>
+         <!-- Меню -->
+
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+          </button>
+
+
+        <!-- Меню контейнер -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link current-page link" href="./"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./">Контакти</a>
+            </li>
+          </ul>
+    
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+              <a href="./" class="mobile-contacts__tel link">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="./" class="mobile-contacts__mail link">info@devstudio.com</a>
+            </li>
+          </ul>
+    
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a href="./" class="mobile-socials__link link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="./" class="mobile-socials__link link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="./" class="mobile-socials__link link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="./" class="mobile-socials__link link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -323,15 +381,11 @@
 </section>
 
   </main>
-  <div class="page-footer">
-   <footer class="footer" id="footer">
+       <footer class="footer" id="footer">
         <div class="container footer__container">
         <div class="address-container">
-          <a class="footer__logo logo link" href="WebStudio"
-            ><span class="footer__logo-firs">Web</span
-            ><span class="footer__logo-second">Studio</span></a
-          >
-          <address>
+        <a href="./index.html" class="footer-logo"><span class="logo">Web</span>Studio</a>
+          <address class="address">
               <ul class="footer__contacts-list list">
                 <li>
                   <a
@@ -342,12 +396,12 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li>
+                <li class="address-list-item">
                   <a class="footer__contacts-link link" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li>
+                <li class="address-list-item">
                   <a class=" footer__contacts-link link" href="tel:+380961111111"
                     >+38 096 111 11 11</a>
                 </li>
@@ -388,7 +442,7 @@
                 </ul>
         </div>
        
-         <form class="form js-speaker-form">
+         <form class="footer-form  form js-speaker-form">
           <div class="footer-wrapper">
           <label for="mail" class="sender-label" >ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
           <input class="sender-input" type="email" name="mail" id="footer-mail"  placeholder="E-mail"/>
