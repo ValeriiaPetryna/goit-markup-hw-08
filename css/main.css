@@ -18,6 +18,13 @@
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero, .benefits, .team, .customers {
+    padding-top: -60px;
+    padding-bottom: -60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero, .benefits, .team, .customers {
     padding-top: 94px;
@@ -275,8 +282,8 @@ a:focus {
 
 .close-icon {
   fill: black;
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
 }
 
 .close-icon:hover {
@@ -1295,7 +1302,6 @@ a:focus {
 
 .team {
   background-color: #f5f4fa;
-  padding-bottom: 60px;
 }
 
 .team__list {
@@ -1376,7 +1382,7 @@ a:focus {
 }
 
 .team__container {
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1473,38 +1479,24 @@ a:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
   }
 }
 
 .customers__item {
-  margin: 15px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
+      flex-basis: calc((100% - 4 * 30px) / 2);
 }
 
 @media screen and (min-width: 480px) {
   .customers__item {
     -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
         flex-basis: calc((100% - 4 * 30px) / 2);
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .customers__item {
-    -ms-flex-preferred-size: calc((100% - 6 * 30px) / 3);
-        flex-basis: calc((100% - 6 * 30px) / 3);
-    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .customers__item {
-    -ms-flex-preferred-size: calc((100% - 12 * 30px) / 6);
-        flex-basis: calc((100% - 12 * 30px) / 6);
-    margin: 15px;
-  }
+  lex-basis: calc((100% - 12 * 30px) / 6);
 }
 
 .customers__link {
@@ -1555,10 +1547,6 @@ a:focus {
 
 .customers__link {
   padding: 16px 32px;
-}
-
-.customers__item:last-child {
-  margin-right: 0px;
 }
 
 .footer {
@@ -1997,7 +1985,7 @@ a:focus {
 .projects-item {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1, 86;
+  line-height: 1.86;
   color: #757575;
 }
 
