@@ -27,7 +27,6 @@
 
 @media screen and (min-width: 1200px) {
   .hero, .benefits, .team, .customers {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -1385,12 +1384,6 @@ a:focus {
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .team__container {
-    padding-bottom: 94px;
-  }
-}
-
 .team__social-icon {
   fill: #AFB1B8;
 }
@@ -1408,9 +1401,17 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
   width: auto;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .team__member {
+    margin-bottom: 30px;
+  }
+  .team__member:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1470,33 +1471,37 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (min-width: 480px) {
-  .customers__icons-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
 }
 
 .customers__item {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 210px;
+  height: 92px;
   -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
       flex-basis: calc((100% - 4 * 30px) / 2);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .customers__item {
-    -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
-        flex-basis: calc((100% - 4 * 30px) / 2);
+    width: 226;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  lex-basis: calc((100% - 12 * 30px) / 6);
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 12 * 30px) / 6);
+        flex-basis: calc((100% - 12 * 30px) / 6);
+    width: 170;
+  }
 }
 
 .customers__link {
@@ -1543,10 +1548,6 @@ a:focus {
 .customers__item:hover,
 .customers__item:focus {
   border-color: #2196F3;
-}
-
-.customers__link {
-  padding: 16px 32px;
 }
 
 .footer {

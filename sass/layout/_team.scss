@@ -70,9 +70,9 @@
   // padding-bottom: 60px;
   // @media screen and (max-width: 450px) 
   // padding-bottom: -60px;
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-bottom: 94px;
+  // }
 }
 
 .team__social-icon {
@@ -90,7 +90,7 @@
   color: $main-color;
   display: inline-block;
   justify-content: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   width: auto;
   height: auto;
 
@@ -98,14 +98,21 @@
   //   margin-bottom: -30px;
   // }
 
- 
+  @media screen and (max-width: 768px) {
+  margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
+    
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 4 * 30px) / 4);
+    
   }
 }
 
