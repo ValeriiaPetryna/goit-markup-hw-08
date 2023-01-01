@@ -45,6 +45,7 @@
           </ul>
         </nav>
         </div>
+        
           <ul class="header__contacts list">
             <li class="item header__adress-item">
               <a class="contacts-link header__mail-link link"
@@ -67,7 +68,7 @@
             </li>
           </ul>
           
-        </div>
+        
          <!-- Меню -->
 
           <button
@@ -84,7 +85,7 @@
         <!-- Меню контейнер -->
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
-            <svg class="close-icon" width="40" height="40">
+            <svg class="close-icon-btn" width="40" height="40">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
@@ -140,6 +141,7 @@
         </div>
       </section>
       <section class="benefits" id="benefits">
+        <h2 class="visually-hidden">benefits</h2>
         <div class="container benefits__container">
           <ul class="benefits__list list">
             <li class="column">
@@ -201,7 +203,7 @@
               <img class="about__computer-version"
               srcset="
                   ./images/about/img_370.jpg  370w,
-                  ./images/about/img_.740.jpg  740w,
+                  ./images/about/img_740.jpg  740w,
                   "
                   sizes="(min-width: 1200px) 370px,100vw"
                   src="./images/about/img_370.jpg"
@@ -216,7 +218,7 @@
               <img
               srcset="
                   ./images/about/img_370-1.jpg  370w,
-                  ./images/about/img_.740-1.jpg  740w,
+                  ./images/about/img_740-1.jpg  740w,
                   "
                   sizes="(min-width: 1200px) 370px,100vw"
                   src="./images/about/img_370-1.jpg"
@@ -230,7 +232,7 @@
               <img
               srcset="
                   ./images/about/img_370-2.jpg  370w,
-                  ./images/about/img_.740-2.jpg  740w,
+                  ./images/about/img_740-2.jpg  740w,
                   "
                   sizes="(min-width: 1200px) 370px,100vw"
                   src="./images/about/img_370-2.jpg"
@@ -250,11 +252,11 @@
           <h2 class="team__title title section__heading ">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__member">
-              <div class="team__card-thumb">
-                <img
+             
+                <!-- <img
                   class="team__product-designer"
                   srcset="
-                  ./images/teams/img_270.jpg  270w,
+                  ./images/teams/img_270270.jpg  w,
                   ./images/teams/img_354.jpg  354w,
                   ./images/teams/img_450.jpg  450w,
                   ./images/teams/img_540.jpg  540w,
@@ -266,7 +268,16 @@
                   alt="Product Designer"
                   width="270"
                   height="260"
-                />
+                /> -->
+
+                <picture class="team__picture">
+                        <source srcset="./images/teams/img_708.jpg 1x, ./images/teams/img_900.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/teams/img_450.jpg 1x, ./images/teams/img_540.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/teams/img_270.jpg 1x, ./images/teams/img_354.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/teams/img_450.jpg" alt="Product Designer" width="450"
+                  height="460"/>
+                </picture>
+              <div class="team__card-thumb">
                 <h3 class="team__person-name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
                 <ul class="team__social-icons list">
@@ -302,8 +313,7 @@
               </div>
             </li>
             <li class="team__member">
-              <div class="team__card-thumb">
-                <img
+                <!-- <img
                   class="team__frontend-developer"
                   srcset="
                   ./images/teams/img_270-1.jpg  270w,
@@ -318,7 +328,15 @@
                   alt="Frontend Developer"
                   width="270"
                   height="260"
-                />
+                /> -->
+                 <picture class="team__picture">
+                        <source srcset="./images/teams/img_708-1.jpg 1x, ./images/teams/img_900-1.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/teams/img_450-1.jpg 1x, ./images/teams/img_540-1.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/teams/img_270-1.jpg 1x, ./images/teams/img_354-1.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/teams/img_450-1.jpg" alt="Frontend Developer" width="450"
+                  height="460"/>
+                </picture>
+                <div class="team__card-thumb">
                 <h3 class="team__person-name">Ольга Рєпіна</h3>
                 <p class="team__position team__position-frontend">Frontend Developer</p>
                 <ul class="team__social-icons list">
@@ -354,8 +372,7 @@
               </div>
             </li>
             <li class="team__member">
-              <div class="team__card-thumb">
-                <img
+                <!-- <img
                   class="team__marketing"
                   srcset="
                   ./images/teams/img_270-2.jpg  270w,
@@ -370,7 +387,15 @@
                   alt="Marketing"
                   width="270"
                   height="260"
-                />
+                /> -->
+                <picture class="team__picture">
+                        <source srcset="./images/teams/img_708-2.jpg 1x, ./images/teams/img_900-2.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/teams/img_450-2.jpg 1x, ./images/teams/img_540-2.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/teams/img_270-2.jpg 1x, ./images/teams/img_354-2.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/teams/img_450-2.jpg" alt="Marketing" width="450"
+                  height="460"/>
+                </picture>
+                <div class="team__card-thumb">
                 <h3 class="team__person-name">Микола Тарасов</h3>
                 <p class="team__position team__position-marketing">Marketing</p>
                 <ul class="team__social-icons list">
@@ -406,8 +431,7 @@
               </div>
             </li>
             <li class="team__member">
-              <div class="team__card-thumb">
-                <img
+                <!-- <img
                   class="team__designer"
                   srcset="
                   ./images/teams/img_270-3.jpg  270w,
@@ -422,7 +446,15 @@
                   alt="UI Designer"
                   width="270"
                   height="260"
-                />
+                /> -->
+                <picture class="team__picture">
+                        <source srcset="./images/teams/img_708-3.jpg 1x, ./images/teams/img_900-3.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/teams/img_450-3.jpg 1x, ./images/teams/img_540-3.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/teams/img_270-3.jpg 1x, ./images/teams/img_354-3.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/teams/img_450-3.jpg" alt="UI Designer" width="450"
+                  height="460"/>
+                </picture>
+                <div class="team__card-thumb">
                 <h3 class="team__person-name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
                 <ul class="team__social-icons list">
@@ -509,7 +541,7 @@
     </main>
       <footer class="footer" id="footer">
         <div class="container footer__container">
-        <div class="address-container">
+             <div class="address-container">
         <a href="./index.html" class="footer-logo"><span class="logo">Web</span>Studio</a>
           <address class="address">
               <ul class="footer__contacts-list list">
@@ -567,46 +599,53 @@
                   </li>
                 </ul>
         </div>
-       
-         <form class="footer-form  form js-speaker-form">
-          <div class="footer-wrapper">
-          <label for="mail" class="sender-label" >ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+      
+         <form class="footer-form   js-speaker-form">
+           <label for="mail" class="sender-label" >
+             ПІДПИШІТЬСЯ НА РОЗСИЛКУ
+            </label>
+            <div class="footer-wrapper">
           <input class="sender-input" type="email" name="mail" id="footer-mail"  placeholder="E-mail"/>
+
           <button class="sender-btn button" type="submit">
-          <span  class="sender-text">Підписатися</span> 
+        Підписатися
           <svg class="icon-send" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
-        </svg>
-  </button>
+           </svg>
+            </button>
         </div>
-         </div>
+      
           </form>
+        </div>
       </footer>
        <div class="is-hidden data-modal" data-modal>
-    <div class="modal">
+            <div class="modal">
       <form class="form">
         <div class="form-group" role="group" aria-labelledby="details">
           <p class="form__heading" id="details">Залиште свої дані, ми вам передзвонимо</p>
           <label class="form__item">
             <span class="form__item-name">Ім'я</span>
+           
+            <input type="name" name="name" class="form__item-input"> 
             <svg class="modal-icons">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
-            <input type="name" name="name" class="form__item-input">
           </label>
           <label class="form__item">
             <span class="form__item-name">Телефон</span>
+            
+            <input type="tel" name="tel" class="form__item-input">
             <svg class="modal-icons">
              <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
-            <input type="tel" name="tel" class="form__item-input">
           </label>
           <label class="form__item">
             <span class="form__item-name">Пошта</span>
-            <svg class="modal-icons">
+           
+            <input type="email" name="email" class="form__item-input">
+             <svg class="modal-icons">
                <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
-            <input type="email" name="email" class="form__item-input">
           </label>
           <label class="form__item">
             <span class="form__item-name">Коментар</span>
@@ -620,7 +659,7 @@
             <use href="./images/icons.svg#icon-check-mark"></use>
           </svg>
             </span>
-            <span>Погоджуюся з розсилкою та приймаю &nbsp</span>
+            <span>Погоджуюся з розсилкою та приймаю &nbsp;</span>
             <a class="agreement-style"
             href=".index.html"><span class="agreement">Умови договору</span></a>
             
@@ -634,8 +673,8 @@
          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-    </div>
-  </div>
+             </div>
+      </div>
         <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 <div class="close-sign" data-modal-close>
@@ -709,7 +748,12 @@
         </div> -->
       
       <!-- <button data-modal-open class="main-button button" >Замовити послугу</button> -->
-    
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
       <script src="./js/modal.js"></script>
        <script>
         (() => {

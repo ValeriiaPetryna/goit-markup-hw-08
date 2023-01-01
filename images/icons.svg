@@ -155,8 +155,8 @@
 <symbol id="icon-check-mark" viewBox="0 0 42 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
 </symbol>
-<symbol id="icon-send" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M28 0l-24 13.5 7.67 2.841 11.83-11.091-8.998 12.14 0.007 0.003-0.009-0.003v6.611l4.301-5.018 5.449 2.018 3.75-21z"></path>
+<symbol id="icon-send" viewBox="0 0 24 24">
+ <path fill="#fff" d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"/>
 </symbol>
 <symbol id="mobile-menu" viewBox="0 0 32 32">
 <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
