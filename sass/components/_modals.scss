@@ -47,6 +47,9 @@
 
 .close-icon {
   fill: black;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
   width: 18px;
   height: 18px;
 
@@ -196,6 +199,19 @@
   fill: #212121;
 }
 
+.agreement-style {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+
+color: #2196F3;
+}
+
 .agree-label {
   font-family: "Roboto";
   font-style: normal;
@@ -252,3 +268,4 @@
 .check-line input:checked + .checkbox-agree .agree-icon {
   fill: #ffffff;
 }
+
