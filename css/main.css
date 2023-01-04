@@ -35,6 +35,11 @@
   margin: 0;
 }
 
+a {
+  color: #212121;
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -117,11 +122,6 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
   }
-}
-
-a {
-  color: #212121;
-  text-decoration: none;
 }
 
 h1,
@@ -263,6 +263,10 @@ a:focus {
 }
 
 .close-btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #fff;
   cursor: pointer;
   -webkit-box-pack: center;
@@ -277,10 +281,19 @@ a:focus {
   padding: 0;
   border-radius: 50%;
   border: solid rgba(0, 0, 0, 0.1) 1px;
+  top: 8px;
+  right: 8px;
 }
 
 .close-icon {
   fill: black;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 18px;
   height: 18px;
 }
@@ -295,8 +308,7 @@ a:focus {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-left: 40px;
-  padding-top: 40px;
+  padding: 40px;
   padding-bottom: 10px;
 }
 
@@ -439,6 +451,12 @@ a:focus {
   width: 18px;
   height: 18px;
   fill: #212121;
+}
+
+.agreement-style {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #2196F3;
 }
 
 .agree-label {
@@ -1942,10 +1960,6 @@ a:focus {
   }
 }
 
-.sender-btn:hover {
-  opacity: 0.8;
-}
-
 .our-projects-list {
   padding: 0px;
   margin: 0px;
@@ -2017,8 +2031,9 @@ a:focus {
 
 .filter-button:hover,
 .filter-button:focus {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #2196F3;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .filter-button1 {
