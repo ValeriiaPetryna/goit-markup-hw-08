@@ -90,13 +90,11 @@
   color: $main-color;
   display: inline-block;
   justify-content: center;
-  // margin-bottom: 30px;
+  
   width: auto;
   height: auto;
 
-  // &:last-child {
-  //   margin-bottom: -30px;
-  // }
+
 
   @media screen and (max-width: 768px) {
   margin-bottom: 30px;

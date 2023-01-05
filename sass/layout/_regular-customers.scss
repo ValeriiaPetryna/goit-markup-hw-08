@@ -25,7 +25,7 @@
     
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
     
     
     // display: flex;
@@ -39,17 +39,14 @@ display: block;
 height: 92px;
 flex-basis: calc((100% - 4 * 30px) / 2);
    
-//     @media screen and (min-width: 480px) {
-// flex-basis: calc((100% - 4 * 30px) / 2);
-    
-//     }
 
     @media screen and (min-width: 768px)  {
-     width: 226;
+    flex-basis: calc((100% - 6 * 30px) / 3);
+     width: 226px;
     }
 @media screen and (min-width: 1200px) {
  flex-basis: calc((100% - 12 * 30px) / 6);
- width: 170;
+ width: 170px;
 }
 }
 
