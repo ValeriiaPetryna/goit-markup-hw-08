@@ -98,9 +98,9 @@ padding-top: 118px;
                 color: #FFFFFF;
         
 
-                @media screen and (min-width: 767px) {
-                        font-size: 44px;
-                        line-height: 60px;
+                @media screen and (min-width: 768px) {
+                        font-size: 26px;
+                        line-height: calc(42/26);
     }
 }
 

@@ -69,6 +69,14 @@
   }
 }
 
+.mobile-socials {
+  @media (max-width: 320px) {
+  display: flex;
+  width: 320px;
+  flex-wrap: wrap;
+  }
+}
+
 .menu-container.is-open {
   transform: translateX(0);
 }

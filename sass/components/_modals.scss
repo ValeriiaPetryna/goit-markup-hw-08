@@ -9,23 +9,27 @@
 
 .modal {
   position: absolute;
-  top: calc(50% - (614px / 2));
-  left: calc(50% - 225px);
+  top: 50%;
+  transform: translate(-50%, +50%);
+  left: 50%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
+  width: 95%;
 
-  @media screen and (max-width: 1199.98px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
+  
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    left: calc(50% - 254px);
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 528px;
+  //   left: calc(50% - 254px);
+  //   height: 581;
+  // }
 }
 
 .is-hidden {
@@ -52,6 +56,11 @@
   //   width: 100%;
     
   // }
+
+  &:hover.close-icon {
+    fill: $accent-color;
+    transition:  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
 }
 
 
@@ -63,10 +72,7 @@
   width: 18px;
   height: 18px;
 
-  &:hover {
-    fill: $accent-color;
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
+  
 }
 
 .form {
