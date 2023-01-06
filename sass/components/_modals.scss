@@ -25,11 +25,11 @@
   
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   width: 528px;
-  //   left: calc(50% - 254px);
-  //   height: 581;
-  // }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    left: calc(50% - 254px);
+    height: 581;
+  }
 }
 
 .is-hidden {
@@ -233,8 +233,8 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #757575;
   display: block;
@@ -243,9 +243,9 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   // margin-left: 0px;
   // margin-right: 0px;
 
-  @media screen and(max-width: 768px) {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+  @media screen and(min-width: 1198.99px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
   }
 }
 
