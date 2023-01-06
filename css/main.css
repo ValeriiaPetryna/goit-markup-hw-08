@@ -232,8 +232,8 @@ a:focus {
 .modal {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   left: 50%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -279,12 +279,12 @@ a:focus {
   border: solid rgba(0, 0, 0, 0.1) 1px;
   top: 8px;
   right: 8px;
+  -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.close-btn:hover.close-icon {
+.close-btn:focus.close-icon, .close-btn:hover.close-icon {
   fill: #2196F3;
-  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .close-icon {
@@ -438,6 +438,12 @@ a:focus {
           align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.form__submit:focus, .form__submit:hover {
+  background-color: #2196F3;
 }
 
 .modal-icons {
