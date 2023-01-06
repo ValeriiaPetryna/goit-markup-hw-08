@@ -19,16 +19,14 @@
   display: flex;
   justify-content: space-between;
   width: 95%;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
+  width: 450px;
+  height: 609px;
   
-  }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199px) {
     width: 528px;
-    left: calc(50% - 254px);
-    height: 581;
+height: 581px;
+    
   }
 }
 
