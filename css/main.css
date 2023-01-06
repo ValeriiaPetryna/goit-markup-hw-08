@@ -282,8 +282,8 @@ a:focus {
   border: solid rgba(0, 0, 0, 0.1) 1px;
   top: 8px;
   right: 8px;
-  -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -webkit-transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .close-btn:hover .close-icon,
@@ -351,12 +351,12 @@ a:focus {
   border-radius: 4px;
   height: 40px;
   padding: 12px 12px 12px 42px;
+  -webkit-transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form__item-input:focus-within {
   border-color: #2196F3;
-  -webkit-transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: border cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .form__item-input:focus, .form__item-input:hover {
