@@ -243,10 +243,7 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   // margin-left: 0px;
   // margin-right: 0px;
 
-  @media screen and(max-width: 1200px) {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-  }
+
 }
 
 .input-line {
