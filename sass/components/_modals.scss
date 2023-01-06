@@ -25,9 +25,8 @@
 
   @media screen and (min-width: 1199px) {
     width: 528px;
-height: 581px;
-    
-  }
+   height: 581px;
+}
 }
 
 .is-hidden {
@@ -50,21 +49,14 @@ height: 581px;
   top: 8px;
   right: 8px;
 
-  //  @media screen and (max-width: 450px) {
-  //   width: 100%;
-    
-  // }
-
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   
-&:focus.close-icon, 
-   &:hover.close-icon {
-    fill: $accent-color;
-    
-  }
 }
 
-
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
+  fill: $accent-color;
+}
 .close-icon {
   fill: black;
   display: inline-block;
@@ -104,10 +96,6 @@ height: 581px;
   display: flex;
   flex-direction: column;
 
-  // &:focus-within .modal-icons {
-  //     transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  //     fill: $;
-  // }
 }
 
 .form__item-input {
@@ -238,8 +226,7 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   display: block;
   justify-content: center;
   align-items: center;
-  // margin-left: 0px;
-  // margin-right: 0px;
+  
 
   @media screen and(min-width: 1198.99px) {
     font-size: 14px;
@@ -251,9 +238,7 @@ transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   margin-top: 20px;
 }
 
-// .check-line {
-//     // margin: 10px 0;
-// }
+
 
 .checkbox-agree {
   display: flex;
